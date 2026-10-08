@@ -9,16 +9,24 @@ const AppToast = {
     toast.error(message);
   },
 
-  loading(message) {
-    return toast.loading(message);
-  },
-
   info(message) {
     toast(message);
   },
 
+  loading(message) {
+    return toast.loading(message);
+  },
+
+  promise(promise, messages) {
+    return toast.promise(promise, messages);
+  },
+
   dismiss(toastId) {
     toast.dismiss(toastId);
+  },
+
+  dismissAll() {
+    toast.dismiss();
   },
 };
 
